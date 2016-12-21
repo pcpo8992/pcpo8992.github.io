@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    background-image: url(https://source.unsplash.com/1200x300?building);
+    background-size: cover;
+    height: 40vh;
+}
+
+section .container {
+    height: 50vh;
+}
+
+section .container h2 {
+    margin: 10px;
+    color: #393333;
+}
+
+section .container p {
+    margin: 10px;
+    letter-spacing: 2px;
+    background-color: antiquewhite;
+}
+
+section .container span {
+    display: inline-block;
+    font-size: 2em;
+}
+
+section img {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+section h3 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer .container {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 10px 0px;
+    line-height: 10vh;
+    clear: both;
+}
