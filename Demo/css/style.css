@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
 nav .container {
     width: 80%;
     height: 5vh;
@@ -21,7 +21,6 @@ nav ul>li {
     display: inline-block;
     color: white;
 }
-
 
 nav .container a {
     font-size: 1.3em;
@@ -60,14 +59,16 @@ header [class="col-"] {
 }
 
 header h1 {
-    font-family: Bree + Serif sans-serif;
-    font-size: 2.5em;
+    font-family: 'Baloo Thambi', cursive;
+    ;
+    font-size: 2.7em;
     font-weight: 600;
     color: white;
     width: 70%;
     margin: 10px auto;
     border-bottom: 5px solid white;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 header p {
@@ -109,8 +110,9 @@ section .container img {
     width: 100%;
     display: flex;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px;
+    border: 0.2px solid gray;
 }
 
 section .container h2 {
@@ -119,25 +121,28 @@ section .container h2 {
     color: #ba3232;
 }
 
+section p {
+    text-align: center;
+}
+
 footer .container {
     width: 80%;
     height: 5vh;
     color: white;
     clear: both;
-    
+    overflow: hidden;
 }
 
-footer .row{
-    display: flex;
-    align-items:flex-end;
+footer .row {
+    height: 100%;
 }
 
 footer .container [class^="col-"] {
     background-color: black;
     width: 100%;
-    display: flex;
-    height: 30px;
-    align-items:center;
-    margin: 10px 0px;
+    height: 100%;
+    display: block;
+    margin: 0px 0px;
     font-size: 0.5em;
+    line-height: 35px;
 }

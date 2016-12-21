@@ -1,23 +1,86 @@
+nav .container {
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    top: 0px;
+}
+
+nav .row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    align-items: center;
+    background-color: black;
+}
+
+nav ul>li {
+    display: flex;
+    color: white;  
+}
+
+nav .container a {
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+nav .container a:hover {
+    color: red;
+    display: block;
+}
+
 header {
+    margin: 5vh 0px 0px 0px;
     display: flex;
     background-image: url(https://source.unsplash.com/1200x300?building);
     background-size: cover;
     height: 40vh;
 }
 
+.btn{
+    margin: 10px auto;
+}
+button{
+    width:100px;
+    height: 30px;
+    background-color: #f8f8f8;
+    font-size: 1em;
+}
+
 section .container {
     height: 50vh;
 }
 
+section article{
+    clear: both
+}
 section .container h2 {
-    margin: 10px;
-    color: #393333;
+    margin: 10px 10px;
+    color: #e54e4e;
+    text-decoration: underline;
+    color: #ea8a8a;
+    clear: both;
+    font-style: italic;
+    font-size: 2em;
 }
 
 section .container p {
+    font-family: 'arial';
     margin: 10px;
     letter-spacing: 2px;
     background-color: antiquewhite;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: left;
+    height: 200px;
+}
+
+section .container img{
+    float: left;
+    margin: 0px 10px;
 }
 
 section .container span {
@@ -32,17 +95,25 @@ section img {
     margin: auto;
 }
 
-section h3 {
-    text-align: center;
-    margin-top: 5px;
-}
 
 footer .container {
-    height: 10vh;
     width: 100%;
-    background-color: black;
+    height: 5vh;
     color: white;
-    margin: 10px 0px;
-    line-height: 10vh;
     clear: both;
+    overflow: hidden;
+}
+
+footer .row {
+    height: 100%;
+}
+
+footer .container [class^="col-"] {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0px 0px;
+    font-size: 0.5em;
+    line-height: 35px;
 }
