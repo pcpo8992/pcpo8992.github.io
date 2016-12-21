@@ -1,0 +1,28 @@
+/* bos-sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* all tag reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+nav,
+header,
+div,
+body,
+span,
+article,
+section,
+aside,
+footer {
+    margin: 0;
+    padding: 0px;
+}
