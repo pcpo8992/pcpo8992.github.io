@@ -5,44 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
-    <title>title</title>
+    <title>Boostrap</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pcpo8992.github.io/css/basic.css">
+    <link rel="stylesheet" href="https://pcpo8992.github.io/css/grid.css">
+
+    <link rel="stylesheet" href="../css/boostrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <nav>
-      <!--下拉選單開始-->
-      <div class="dropdown">
-          <!--選單按鈕-->
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              按鈕文字
-              <!--按鈕旁邊小圖示-->
-              <span class="caret"></span>
-          </button>
-          <!--選單主體-->
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="#">選項 1</a></li>
-              <li><a href="#">選項 2</a></li>
-              <li><a href="#">選項 3</a></li>
-              <!--分隔線-->
-              <li role="separator" class="divider"></li>
-              <li><a href="#">其他選項</a></li>
-          </ul>
-      </div>
-      <!--下拉選單結尾-->
-  </nav>
-   <header>
-    <!--固定寬度大型看板開始-->
-    <div class="container">
-        <div class="jumbotron">
-            <h1>大型看板標題</h1>
-            <p>文字說明內容</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <header>
+        <!--輪播開始-->
+        <div id="slideshow" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <!--導覽列開始-->
+                <!--導覽列結束-->
+                <!--輪播圖片或內容-->
+                <div class="item active">
+                    <!--固定寬度大型看板開始-->
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Example headline.</h1>
+                            <p>Note: If you're viewing this page via a file:// URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+                            </p>
+                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                    <!--固定寬度大型看板結尾-->
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                            </p>
+                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                            </p>
+                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--上一頁 下一頁 按鈕-->
+            <div class="control-btn">
+                <a href="#slideshow" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left">   
+                    </span>
+                </a>
+                <a href="#slideshow" class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <!--小圓點換頁-->
+            <ol class="carousel-indicators">
+                <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                <li data-target="#slideshow" data-slide-to="1"></li>
+                <li data-target="#slideshow" data-slide-to="2"></li>
+            </ol>
         </div>
-    </div>
-    <!--固定寬度大型看板結尾-->
+        <!--輪播結尾-->
+        </div>
     </header>
+    <section>
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <div class="thumbnail">
+                            <img src="https://source.unsplash.com/130x130?nature" alt="">
+                        </div>
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <a class="btn btn-default" href="#">View details</a>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <div class="thumbnail">
+                            <img src="https://source.unsplash.com/130x130?people" alt="">
+                        </div>
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <a class="btn btn-default" href="#">View details</a>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <div class="thumbnail">
+                            <img src="https://source.unsplash.com/130x130?food" alt="">
+                        </div>
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <a class="btn btn-default" href="#">View details</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="line"></div>
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1>First featurette heading. <span>It'll blow your mind.</span>
+                        </h1>
+                        <p>
+                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img class="square" src="https://source.unsplash.com/500x500?sea" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="line"></div>
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img class="square" src="https://source.unsplash.com/500x500?building" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h1>Oh yeah, it's that good. <span>See for yourself.</span>
+                        </h1>
+                        <p>
+                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="line"></div>
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1>And lastly, this one. <span>Checkmate.</span>
+                        </h1>
+                        <p>
+                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img class="square" src="https://source.unsplash.com/500x500?nature" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="line"></div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <span>© 2014 Company, Inc. </span>
+                    <a href="#">· Privacy </a>
+                    <a href="#">· Terms </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
