@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+
+
 nav .container {
     width: 80%;
     height: 5vh;
@@ -9,7 +11,6 @@ nav .container {
 
 nav .row {
     display: flex;
-    padding: 0px;
     height: 100%;
     width: calc(100% - 20px);
     margin: 0px auto;
@@ -39,7 +40,6 @@ header .container {
     height: 40vh;
     width: 80%;
     margin-top: 5vh;
-    overflow: auto;
 }
 
 header .row {
@@ -51,6 +51,7 @@ header .row {
     margin: 0px auto;
     display: flex;
     align-items: center;
+    overflow: scroll;
 }
 
 header [class="col-"] {
@@ -61,10 +62,10 @@ header [class="col-"] {
 header h1 {
     font-family: 'Baloo Thambi', cursive;
     ;
-    font-size: 2.7em;
+    font-size: 3em;
     font-weight: 600;
     color: white;
-    width: 70%;
+    width: 100%;
     margin: 10px auto;
     border-bottom: 5px solid white;
     text-align: center;
@@ -145,4 +146,22 @@ footer .container [class^="col-"] {
     margin: 0px 0px;
     font-size: 0.5em;
     line-height: 35px;
+}
+
+@media screen and (max-width:768px) {
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:997px) {
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:997px) and (max-width:1200px) {
+    header h1 {
+        font-size: 3em;
+    }
 }

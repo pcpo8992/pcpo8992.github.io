@@ -16,7 +16,7 @@ nav .row {
 
 nav ul>li {
     display: flex;
-    color: white;  
+    color: white;
 }
 
 nav .container a {
@@ -40,11 +40,12 @@ header {
     height: 40vh;
 }
 
-.btn{
+.btn {
     margin: 10px auto;
 }
-button{
-    width:100px;
+
+button {
+    width: 100px;
     height: 30px;
     background-color: #f8f8f8;
     font-size: 1em;
@@ -54,33 +55,37 @@ section .container {
     height: 50vh;
 }
 
-section article{
-    clear: both
+section [class^="col"] {
+    clear: both;
+    background-color: antiquewhite;
+    margin: 10px;
 }
+
 section .container h2 {
     margin: 10px 10px;
     color: #e54e4e;
     text-decoration: underline;
-    color: #ea8a8a;
+    color: #1955de;
     clear: both;
     font-style: italic;
     font-size: 2em;
 }
 
+
 section .container p {
     font-family: 'arial';
     margin: 10px;
     letter-spacing: 2px;
-    background-color: antiquewhite;
     letter-spacing: 2px;
-    word-spacing: 2px;
+    word-spacing: 3px;
     text-align: left;
-    height: 200px;
+    line-height: 25px;
 }
 
-section .container img{
+section .container img {
     float: left;
     margin: 0px 10px;
+    border-radius: 30px;
 }
 
 section .container span {
@@ -92,9 +97,7 @@ section img {
     display: flex;
     align-items: center;
     max-width: 100%;
-    margin: auto;
 }
-
 
 footer .container {
     width: 100%;
@@ -116,4 +119,13 @@ footer .container [class^="col-"] {
     margin: 0px 0px;
     font-size: 0.5em;
     line-height: 35px;
+}
+
+@media screen and (max-width:768px) {
+    section img {
+        width: 200px;
+    }
+    section span {
+        display: inline-block;
+    }
 }
