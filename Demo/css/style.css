@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
-
-
 nav .container {
     width: 80%;
     height: 5vh;
@@ -136,6 +134,7 @@ footer .container {
 
 footer .row {
     height: 100%;
+    clear: both;
 }
 
 footer .container [class^="col-"] {
